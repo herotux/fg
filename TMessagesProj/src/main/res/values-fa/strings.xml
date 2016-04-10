@@ -556,6 +556,8 @@ https://telegram.org/dl</string>
     <string name="IncorrectLocalization">فایل زبان خرابه</string>
     <string name="Enabled">فعال</string>
     <string name="Disabled">غیرفعال</string>
+    <string name="NotificationsService">سرویس نوتیفیکیشن</string>
+    <string name="NotificationsServiceDisableInfo">درصورتی که تمایل دارید از سرویس نوتیفیکیشن گوگل استفاده کنید این قسمت را غیرفعال کنید. هدچند ما پیشنهاد میکنیم سرویس نوتیفیکشن فعال باشد تا اپلیکیشن برای دریافت لحظه ای نوتیفیکیشن در پس زمینه اجرا بمانید</string>
     <string name="SortBy">به ترتیب کن</string>
     <string name="ImportContacts">مخاطب ها رو اضافه کن</string>
     <string name="SortFirstName">نام</string>
@@ -938,6 +940,7 @@ https://telegram.org/dl</string>
     <string name="AreYouSureSessions">مطمئنی می خوای همه نست های دیگه رو تموم کنی ؟</string>
     <string name="AreYouSureDeleteAndExit">مطمئنی که قصد حذف و ترک این گروه رو داری؟</string>
     <string name="AreYouSureDeleteThisChat">مطمئنی که قصد حذف این گفت و گو رو داری؟</string>
+    <string name="AreYouSureShareMyContactInfo">مطمئنی میخوای مشخصات خودت رو به اشتراک بذاری؟</string>
     <string name="AreYouSureBlockContact">مطمئنی می خوای طرف رو مسدود کنی ؟</string>
     <string name="AreYouSureUnblockContact">مطمئنی می خوای طرف رو باز کنی ؟</string>
     <string name="AreYouSureDeleteContact">مطمئنی می خوای طرف رو حذف کنی ؟</string>
