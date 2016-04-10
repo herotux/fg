@@ -15,5 +15,6 @@ TMessagesProj/libs/
 TMessagesProj/*.properties
 TMessagesProj/*.keystore
 TMessagesProj/*.iml
+TMessagesProj/*.apk
 
 TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java
