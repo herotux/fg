@@ -7,4 +7,13 @@ local.properties
 *.keystore
 gradle.properties
 
+TMessagesProj/.idea/
+TMessagesProj/.gradle/
+TMessagesProj/build/
+TMessagesProj/obj/
+TMessagesProj/libs/
+TMessagesProj/*.properties
+TMessagesProj/*.keystore
+TMessagesProj/*.iml
+
 TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java
