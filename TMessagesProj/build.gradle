@@ -15,7 +15,7 @@ dependencies {
 android {
     compileSdkVersion 23
     buildToolsVersion '23.0.3'
-
+    
     useLibrary 'org.apache.http.legacy'
     defaultConfig.applicationId = "org.telegram.messenger"
 
@@ -40,12 +40,12 @@ android {
     }
 
     buildTypes {
-//        debug {
-//            debuggable true
-//            jniDebuggable true
-//            signingConfig signingConfigs.debug
-//            applicationIdSuffix ".beta"
-//        }
+        debug {
+            debuggable true
+            jniDebuggable true
+            signingConfig signingConfigs.debug
+            applicationIdSuffix ".beta"
+        }
 
         release {
             debuggable false
