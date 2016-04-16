@@ -408,15 +408,15 @@ https://telegram.org/dl</string>
     <string name="TodayAt">در</string>
     <string name="YesterdayAt">دیروز در</string>
     <string name="Online">آنلاین</string>
-    <string name="LastSeen">آخرین باری که دیده شده </string>
-    <string name="LastSeenDate">آخرین باری که دیده شده</string>
+    <string name="LastSeen">آخرین بازدید</string>
+    <string name="LastSeenDate">آخرین حضور</string>
     <string name="LastSeenNow">تازه اینجا بوده</string>
     <string name="InviteFriends">دوستان رو دعوت کن</string>
     <string name="GlobalSearch">جستجوی همگانی </string>
-    <string name="Lately">آخرین به روز رسانی های اخیر</string>
-    <string name="WithinAWeek">آخرین به روز رسانی ها تو یک هفته اخیر</string>
-    <string name="WithinAMonth">آخرین به روزرسانی ها تو یک ماه اخیر</string>
-    <string name="ALongTimeAgo">آخرین به روز رسانی های قبل یک ماه اخیر</string>
+    <string name="Lately">آخرین حضور به تازگی</string>
+    <string name="WithinAWeek">آخرین حضور همین هفته</string>
+    <string name="WithinAMonth">آخرین حضور همین ماه</string>
+    <string name="ALongTimeAgo">آخرین حضور خیلی وقت پیش</string>
     <string name="NewMessageTitle">پیام جدید</string>
     <!--group create view-->
     <string name="SendMessageTo">ارسال پیام به ...</string>
@@ -923,7 +923,7 @@ https://telegram.org/dl</string>
     <string name="InvalidCode">کد نامعتبره</string>
     <string name="InvalidFirstName">نام نامعتبره</string>
     <string name="InvalidLastName">نام خانوادگی نامعتبره</string>
-    <string name="Loading">صبر کن داره میاد....</string>
+    <string name="Loading">لطفا صبر کن...</string>
     <string name="NoPlayerInstalled">شما هیچ برنامه ای برای پخش فیلم نداری یکی نصب کن بعد ادامه بده .</string>
     <string name="NoMailInstalled">لطفا یه ایمیل به sms@stel.com ارسال کن و مشکلتو توضیح بده</string>
     <string name="NoHandleAppInstalled">شما هیچ برنامه برای باز کردن  \'%1$s\', نداری . باید یکی نصب کنی</string>
