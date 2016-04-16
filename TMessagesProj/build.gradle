@@ -40,13 +40,12 @@ android {
     }
 
     buildTypes {
-        debug {
-            debuggable true
-            jniDebuggable true
-            signingConfig signingConfigs.debug
-            applicationIdSuffix ".beta"
-        }
-
+//        debug {
+//            debuggable true
+//            jniDebuggable true
+//            signingConfig signingConfigs.debug
+//            applicationIdSuffix ".beta"
+//        }
         release {
             debuggable false
             jniDebuggable false
@@ -54,7 +53,6 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-
         foss {
             debuggable false
             jniDebuggable false
@@ -81,39 +79,13 @@ android {
         manifest.srcFile 'config/foss/AndroidManifest.xml'
     }
 
-    productFlavors {
-        x86 {
-            ndk {
-                abiFilter "x86"
-            }
-            versionCode = 2
-        }
-        arm {
-            ndk {
-                abiFilter "armeabi"
-            }
-            versionCode = 0
-        }
-        armv7 {
-            ndk {
-                abiFilter "armeabi-v7a"
-            }
-            versionCode = 1
-        }
-        fat {
-            versionCode = 3
-        }
-    }
 
-    applicationVariants.all { variant ->
-        def abiVersion = variant.productFlavors.get(0).versionCode
-        variant.mergedFlavor.versionCode = defaultConfig.versionCode * 10 + abiVersion;
-    }
 
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 23
         versionName "3.7.0"
         applicationId 'ir.felegram'
+        versionCode 76711
     }
 }
