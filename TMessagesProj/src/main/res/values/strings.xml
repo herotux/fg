@@ -1183,4 +1183,12 @@
     <string name="formatterDay24H">HH:mm</string>
     <string name="formatterDay12H">h:mm a</string>
     <string name="formatDateAtTime">%1$s at %2$s</string>
+
+
+    <!-- Modifications -->
+    <string name="IdFinder">ID Finder</string>
+    <string name="IdFinderPlaceholder">Username to find...</string>
+    <string name="IdFound">Username found</string>
+    <string name="IdNotFound">Username not found!</string>
+
 </resources>

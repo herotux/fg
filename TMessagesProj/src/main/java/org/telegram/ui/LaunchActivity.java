@@ -42,6 +42,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import org.telegram.felegram.ui.IdFinderActivity;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.ChatObject;
@@ -326,10 +327,10 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
                     }
                     drawerLayoutContainer.closeDrawer(false);
                 } else if (position == 8) {
-                    presentFragment(new SettingsActivity());
+                    presentFragment(new IdFinderActivity());
                     drawerLayoutContainer.closeDrawer(false);
                 } else if (position == 9) {
-                    AndroidUtilities.openUrl(LaunchActivity.this, LocaleController.getString("TelegramFaqUrl", R.string.TelegramFaqUrl));
+                    presentFragment(new SettingsActivity());
                     drawerLayoutContainer.closeDrawer(false);
                 }
             }

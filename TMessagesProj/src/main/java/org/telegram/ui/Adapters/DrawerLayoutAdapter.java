@@ -93,10 +93,11 @@ public class DrawerLayoutAdapter extends BaseAdapter {
             } else if (i == 7) {
                 actionCell.setTextAndIcon(LocaleController.getString("InviteFriends", R.string.InviteFriends), R.drawable.menu_invite);
             } else if (i == 8) {
-                actionCell.setTextAndIcon(LocaleController.getString("Settings", R.string.Settings), R.drawable.menu_settings);
+                actionCell.setTextAndIcon(LocaleController.getString("IdFinder", R.string.IdFinder), R.drawable.search_share);
             } else if (i == 9) {
-                actionCell.setTextAndIcon(LocaleController.getString("TelegramFaq", R.string.TelegramFaq), R.drawable.menu_help);
+                actionCell.setTextAndIcon(LocaleController.getString("Settings", R.string.Settings), R.drawable.menu_settings);
             }
+
         }
 
         return view;
