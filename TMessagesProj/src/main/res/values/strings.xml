@@ -1191,4 +1191,8 @@
     <string name="IdFound">Username found</string>
     <string name="IdNotFound">Username not found!</string>
 
+    <string name="FelegramSettings">Felegram Settings</string>
+    <string name="GeneralSettings">General Settings</string>
+    <string name="JalaliDate">Jalali Date</string>
+
 </resources>

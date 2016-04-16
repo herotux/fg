@@ -1198,4 +1198,9 @@ https://telegram.org/dl</string>
     <string name="IdFound">نام کاربری پیدا شد</string>
     <string name="IdNotFound">نام کاربری پیدا نشد</string>
 
+    <string name="FelegramSettings">تنظیمات فلگرام</string>
+    <string name="GeneralSettings">تنظیمات عمومی</string>
+    <string name="JalaliDate">تاریخ شمسی</string>
+
+
 </resources>
