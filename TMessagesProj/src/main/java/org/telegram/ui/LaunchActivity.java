@@ -42,6 +42,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import org.telegram.felegram.ui.FelegramSettingsActivity;
 import org.telegram.felegram.ui.IdFinderActivity;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.PhoneFormat.PhoneFormat;
@@ -330,6 +331,9 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
                     presentFragment(new IdFinderActivity());
                     drawerLayoutContainer.closeDrawer(false);
                 } else if (position == 9) {
+                    presentFragment(new FelegramSettingsActivity());
+                    drawerLayoutContainer.closeDrawer(false);
+                } else if (position == 10) {
                     presentFragment(new SettingsActivity());
                     drawerLayoutContainer.closeDrawer(false);
                 }
