@@ -1181,15 +1181,15 @@ https://telegram.org/dl</string>
     <string name="AndOther_many">و %1$d سایر</string>
     <string name="AndOther_other">و %1$d سایر</string>
     <!--date formatters-->
-    <string name="formatterMonthYear">MMMM yyyy</string>
-    <string name="formatterMonth">MMM dd</string>
+    <string name="formatterMonthYear">MMMM.yyyy</string>
+    <string name="formatterMonth">dd.MMM</string>
     <string name="formatterYear">dd.MM.yy</string>
     <string name="formatterYearMax">dd.MM.yyyy</string>
-    <string name="chatDate">MMMM d</string>
-    <string name="chatFullDate">MMMM d, yyyy</string>
+    <string name="chatDate">d.MMMM</string>
+    <string name="chatFullDate">d.MMMM,.yyyy</string>
     <string name="formatterWeek">EEE</string>
     <string name="formatterDay24H">HH:mm</string>
-    <string name="formatterDay12H">h:mm a</string>
+    <string name="formatterDay12H">h:mm.a</string>
     <string name="formatDateAtTime">%1$s در %2$s</string>
 
     <!-- Modifications -->

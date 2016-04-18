@@ -16,9 +16,11 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.util.Xml;
 
 import org.telegram.messenger.time.FastDateFormat;
+import org.telegram.messenger.time.PersianFastDateFormat;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;
 import org.xmlpull.v1.XmlPullParser;
@@ -777,14 +779,27 @@ public class LocaleController {
         if (format == null || format.length() == 0) {
             format = defaultFormat;
         }
-        FastDateFormat formatter;
-        try {
-            formatter = FastDateFormat.getInstance(format, locale);
-        } catch (Exception e) {
+        FastDateFormat formatter_final;
+        SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("feleconfig", Activity.MODE_PRIVATE);
+        Log.i("------------------- jalali:", preferences.getBoolean("jalali_date", false) +"");
+        if(preferences.getBoolean("jalali_date", false)) {
+            try {
+                PersianFastDateFormat formatter = PersianFastDateFormat.getInstance(format, locale);
+                formatter_final = formatter;
+                Log.i("------------------- jalali:", "true, in try");
+            } catch (Exception e) {
+                format = defaultFormat;
+                FastDateFormat formatter = FastDateFormat.getInstance(format, locale);
+                formatter_final = formatter;
+                Log.i("------------------- jalali:", "true, in catch");
+            }
+        } else {
+            Log.i("------------------- jalali:", "false");
             format = defaultFormat;
-            formatter = FastDateFormat.getInstance(format, locale);
+            FastDateFormat formatter = FastDateFormat.getInstance(format, locale);
+            formatter_final = formatter;
         }
-        return formatter;
+        return formatter_final;
     }
 
     public void recreateFormatters() {
@@ -806,7 +821,7 @@ public class LocaleController {
         chatFullDate = createFormatter(locale, getStringInternal("chatFullDate", R.string.chatFullDate), "d MMMM yyyy");
         formatterWeek = createFormatter(locale, getStringInternal("formatterWeek", R.string.formatterWeek), "EEE");
         formatterMonthYear = createFormatter(locale, getStringInternal("formatterMonthYear", R.string.formatterMonthYear), "MMMM yyyy");
-        formatterDay = createFormatter(lang.toLowerCase().equals("ar") || lang.toLowerCase().equals("ko") ? locale : Locale.US, is24HourFormat ? getStringInternal("formatterDay24H", R.string.formatterDay24H) : getStringInternal("formatterDay12H", R.string.formatterDay12H), is24HourFormat ? "HH:mm" : "h:mm a");
+        formatterDay = createFormatter(lang.toLowerCase().equals("fa") || lang.toLowerCase().equals("ar") || lang.toLowerCase().equals("ko") ? locale : Locale.US, is24HourFormat ? getStringInternal("formatterDay24H", R.string.formatterDay24H) : getStringInternal("formatterDay12H", R.string.formatterDay12H), is24HourFormat ? "HH:mm" : "h:mm a");
     }
 
     public static String stringForMessageListDate(long date) {
