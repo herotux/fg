@@ -82,7 +82,7 @@ public class FelegramSettingsActivity extends BaseFragment implements Notificati
     public View createView(Context context) {
         actionBar.setBackButtonImage(R.drawable.ic_ab_back);
         actionBar.setAllowOverlayTitle(true);
-        actionBar.setTitle(LocaleController.getString("FelegramSettings", R.string.PrivacySettings));
+        actionBar.setTitle(LocaleController.getString("FelegramSettings", R.string.FelegramSettings));
         actionBar.setActionBarMenuOnItemClick(new ActionBar.ActionBarMenuOnItemClick() {
             @Override
             public void onItemClick(int id) {
@@ -133,6 +133,7 @@ public class FelegramSettingsActivity extends BaseFragment implements Notificati
     @Override
     public void didReceivedNotification(int id, Object... args) {
         if (id == NotificationCenter.felegramSettingsUpdated) {
+            LocaleController.getInstance().recreateFormatters();
             if (listAdapter != null) {
                 listAdapter.notifyDataSetChanged();
             }
