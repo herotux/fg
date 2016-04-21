@@ -41,6 +41,13 @@
                 <category android:name="org.telegram.messenger" />
             </intent-filter>
         </receiver>
+        <receiver android:name="org.telegram.felegram.service.NotificationReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
         <service
             android:name=".GcmPushListenerService"
             android:exported="false" >
@@ -59,7 +66,10 @@
             android:name=".GcmRegistrationIntentService"
             android:exported="false">
         </service>
-
+        <service
+            android:name="org.telegram.felegram.service.NotificationService"
+            android:exported="false" >
+        </service>
         <uses-library android:name="com.google.android.maps" android:required="false"/>
 
     </application>
