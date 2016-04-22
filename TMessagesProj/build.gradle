@@ -86,8 +86,8 @@ android {
     defaultConfig {
         minSdkVersion 9
         targetSdkVersion 23
-        versionName "3.7.0"
+        versionName "3.7.0-f2"
         applicationId 'ir.felegram'
-        versionCode 76711
+        versionCode 76712
     }
 }
