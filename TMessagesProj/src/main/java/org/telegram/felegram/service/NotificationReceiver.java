@@ -18,7 +18,7 @@ public class NotificationReceiver extends BroadcastReceiver {
         SharedPreferences preferences = context.getSharedPreferences("feleconfig", Activity.MODE_PRIVATE);
 
         long last = preferences.getLong("service_started", 0);
-        if(now - last > 10000) {
+        if(now - last > 60000) {
             SharedPreferences.Editor editor = preferences.edit();
             editor.putLong("service_started", now).commit();
 
