@@ -1,7 +1,5 @@
 package org.telegram.messenger.time;
 
-import android.util.Log;
-
 import org.telegram.felegram.utils.calendar.PersianCalendar;
 
 import java.util.Date;
@@ -156,7 +154,6 @@ public class PersianFastDateFormat extends FastDateFormat {
         int Second = date.getSeconds();
         int length = 0;
         StringBuilder builder = new StringBuilder(50);
-        Log.i("Date", "" + Year+"/"+Month+"/"+Day);
         while (length < format.length()) {
             char c = format.charAt(length);
             length = length + 1;

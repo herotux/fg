@@ -781,20 +781,16 @@ public class LocaleController {
         }
         FastDateFormat formatter_final;
         SharedPreferences preferences = ApplicationLoader.applicationContext.getSharedPreferences("feleconfig", Activity.MODE_PRIVATE);
-        Log.i("------------------- jalali:", preferences.getBoolean("jalali_date", false) +"");
         if(preferences.getBoolean("jalali_date", false)) {
             try {
                 PersianFastDateFormat formatter = PersianFastDateFormat.getInstance(format, locale);
                 formatter_final = formatter;
-                Log.i("------------------- jalali:", "true, in try");
             } catch (Exception e) {
                 format = defaultFormat;
                 FastDateFormat formatter = FastDateFormat.getInstance(format, locale);
                 formatter_final = formatter;
-                Log.i("------------------- jalali:", "true, in catch");
             }
         } else {
-            Log.i("------------------- jalali:", "false");
             format = defaultFormat;
             FastDateFormat formatter = FastDateFormat.getInstance(format, locale);
             formatter_final = formatter;
