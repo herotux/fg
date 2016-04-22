@@ -34,7 +34,7 @@ android {
             keyPassword 'isiran'
         }
         release {
-            storeFile file("config/release.keystore")
+            storeFile file("/Users/reza/Documents/telegramkey.jks")
             storePassword 'isiran'
             keyAlias 'radical'
             keyPassword 'isiran'
